@@ -11,6 +11,7 @@ import Mongodb from './Backend/Mongodb';
 import VsCodeTool from './Tools/VsCodeTool';
 import GithubTool from './Tools/GithubTool';
 import GitTool from './Tools/GitTool';
+import FireBaseAuth from './Frontend/FireBaseAuth';
 
 const Skills = () => {
     return (
@@ -22,7 +23,7 @@ const Skills = () => {
                         <div className='w-2/3'>
                             <h1 className='font-bold mb-3'>Frontend</h1>
                             <div className='grid grid-cols-6 gap-5'>
-                                <Html /> <Css /> <Tailwind /><Daisyui /><JavaScript /><Reactjs />
+                                <Html /> <Css /> <Tailwind /><JavaScript /><Reactjs /><FireBaseAuth />
                             </div>
                         </div>
                         <div className='w-1/3'>

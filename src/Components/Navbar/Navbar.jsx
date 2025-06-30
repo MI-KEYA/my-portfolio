@@ -1,7 +1,37 @@
 import React from 'react';
 import logo from '../../assets/logo.png'
+import { NavLink } from 'react-router';
 
 const Navbar = () => {
+    const Link = (
+        <>
+            <NavLink to='/'
+                className={({ isActive }) =>
+                    isActive ? 'text-gray-500 ml-5 font-bold border-b-3  border-blue-950' : 'text-gray-800 ml-5 font-semibold '
+                }>Home
+            </NavLink>
+            <NavLink to='/aboutMe'
+                className={({ isActive }) =>
+                    isActive ? 'text-gray-500 ml-5 font-bold border-b-3  border-blue-950' : 'text-gray-800 ml-5  font-semibold '
+                }>AboutMe
+            </NavLink>
+            <NavLink to='/skills'
+                className={({ isActive }) =>
+                    isActive ? 'text-gray-500 ml-5 font-bold border-b-3  border-blue-950' : 'text-gray-800 ml-5 font-semibold '
+                }>Skills
+            </NavLink>
+            <NavLink to='/education'
+                className={({ isActive }) =>
+                    isActive ? 'text-gray-500 ml-5 font-bold border-b-3  border-blue-950' : 'text-gray-800 ml-5 font-semibold '
+                }>Education
+            </NavLink>
+            <NavLink to='/projects'
+                className={({ isActive }) =>
+                    isActive ? 'text-gray-500 ml-5 font-bold border-b-3  border-blue-950' : 'text-gray-800 ml-5 font-semibold '
+                }>Projects
+            </NavLink>
+        </>
+    )
     return (
         <div className=" navbar bg-base-100 shadow-sm lg:px-35">
             <div className="navbar-start">
@@ -12,8 +42,7 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 3</a></li>
+                        {Link}
                     </ul>
                 </div>
                 <div>
@@ -22,12 +51,18 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 3</a></li>
+                    {Link}
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <a
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className="btn  bg-black text-white rounded-2xl font-semibold"
+                    href='https://drive.google.com/file/d/1P0YPqxL8YIgp2_7ZbZJLVM_ffD3AEFaq/view?usp=sharing'>
+                    Resume
+                </a>
+
             </div>
         </div>
     );

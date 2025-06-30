@@ -19,7 +19,14 @@ const Hero = () => {
                 <p className='mt-4 font-semibold text-gray-500'>Passionate frontend developer crafting clean, responsive user interfaces using React, Tailwind,
                     and modern web technologies for impactful experiences.
                 </p>
-                <button className='btn mt-10 bg-black text-white rounded-2xl py-3 px-8 font-semibold'>Resume</button>
+                {/* <button className='btn mt-10 bg-black text-white rounded-2xl py-3 px-8 font-semibold'>Resume</button> */}
+                <a
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className="btn  mt-10 bg-black text-white rounded-2xl py-3 px-8 font-semibold"
+                    href='https://drive.google.com/file/d/1P0YPqxL8YIgp2_7ZbZJLVM_ffD3AEFaq/view?usp=sharing'>
+                    Resume
+                </a>
             </div>
         </div>
     );
