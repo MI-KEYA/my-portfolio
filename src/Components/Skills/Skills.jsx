@@ -19,21 +19,21 @@ const Skills = () => {
             <div className='w-4/5 mx-auto '>
                 <h2 className="text-3xl font-bold text-gray-800 mb-10 mt-20 text-center">Skills</h2>
                 <div className=' p-10 border-2 border-gray-300  shadow-sm rounded-2xl'>
-                    <div className='flex items-center  gap-20'>
-                        <div className='w-2/3'>
+                    <div className='md:flex items-center  gap-20'>
+                        <div className='md:w-2/3'>
                             <h1 className='font-bold mb-3'>Frontend</h1>
-                            <div className='grid grid-cols-6 gap-5'>
+                            <div className='grid  grid-cols-3 md:grid-cols-6 gap-5'>
                                 <Html /> <Css /> <Tailwind /><JavaScript /><Reactjs /><FireBaseAuth />
                             </div>
                         </div>
-                        <div className='w-1/3'>
+                        <div className='md:w-1/3 md:mt-0 mt-10'>
                             <h1 className='font-bold mb-3'>Backend</h1>
                             <div className='grid grid-cols-3 gap-5'>
                                 <Nodejs /> <Expressjs /><Mongodb />
                             </div>
                         </div>
                     </div>
-                    <div className='w-1/4 mt-10'>
+                    <div className='md:w-1/4 mt-10'>
                         <h1 className='font-bold mb-3'>Tools</h1>
                         <div className='grid grid-cols-3 gap-5'>
                             <VsCodeTool /> <GithubTool /> <GitTool />
