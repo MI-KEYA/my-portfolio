@@ -23,7 +23,7 @@ const Hero = () => {
                 <a
                     target='_blank'
                     rel='noopener noreferrer'
-                    className="btn  mt-10 bg-black text-white rounded-2xl py-3 px-8 font-semibold"
+                    className="btn  mt-10 bg-black hover:bg-gray-700 cursor-pointer text-white rounded-2xl py-3 px-8 font-semibold"
                     href='https://drive.google.com/file/d/1P0YPqxL8YIgp2_7ZbZJLVM_ffD3AEFaq/view?usp=sharing'>
                     Resume
                 </a>

@@ -1,12 +1,49 @@
-# React + Vite
+# 🧑‍💻 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive and interactive personal portfolio website built with **React.js** and **Tailwind CSS**. It showcases my projects, skills, education, resume, and contact information — helping me stand out to recruiters and clients.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Site
 
-## Expanding the ESLint configuration
+🌐 [View Portfolio](https://cheerful-circle.surge.sh)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- ⚡ Fast and responsive design using Tailwind CSS
+- 🧩 React components for clean code structure
+- 🧠 About Me and Skills sections with animated tech cards
+- 📂 Project showcase with GitHub and Live Demo links
+- 📜 Resume button linked to my CV
+- 📧 Contact form with EmailJS integration to send messages directly to my email
+
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, Tailwind CSS, Framer Motion, React Icons
+- **Email**: EmailJS (for sending messages from the contact form)
+- **Deployment**: Surge.sh
+
+---
+
+## 📁 Folder Structure
+
+portfolio/
+│
+├── public/
+│ └── index.html
+│
+├── src/
+│ ├── assets/ # Images & icons
+│ ├── components/ # Reusable components
+│ ├── pages/ # Page components like Home, Projects, Contact
+│ ├── App.jsx
+│ └── main.jsx
+│
+├── CNAME # Surge custom domain (optional)
+├── README.md
+└── package.json
